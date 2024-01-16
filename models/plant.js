@@ -47,7 +47,7 @@ Plant.init(
   {
     sequelize,
     modelName: "Plant",
-    tableName: "Plants",
+    tableName: "Plant",
     timestamps: false, // Pas de createdAt/updatedAt
   }
 );

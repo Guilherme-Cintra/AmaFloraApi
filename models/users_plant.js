@@ -60,7 +60,7 @@ User.init(
   {
     sequelize,
     modelName: "Plante_obtenue",
-    tableName: "Plantes_obtenues",
+    tableName: "Plante_obtenue",
     timestamps: false,
   }
 );

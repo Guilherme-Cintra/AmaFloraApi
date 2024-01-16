@@ -36,7 +36,7 @@ Plante_recherchee.init(
   {
     sequelize,
     modelName: "Plante_recherchee",
-    tableName: "Plantes_recherchees",
+    tableName: "Plante_recherchee",
     timestamps: false,
   }
 );

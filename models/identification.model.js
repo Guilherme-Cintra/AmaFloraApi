@@ -44,7 +44,7 @@ Identification.init(
   {
     sequelize,
     modelName: "Identification",
-    tableName: "Identifications",
+    tableName: "Identification",
     timestamps: false, // Pas de createdAt/updatedAt
   }
 );
