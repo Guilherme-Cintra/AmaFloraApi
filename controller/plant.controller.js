@@ -43,7 +43,7 @@ export const createPlant = async (req, res) => {
 
 export const getPlantById = async (req, res) => {
   try {
-    const id = req.body.id;
+    const id = req.params.id;
     const plant  = await Plant.findByPk(id)
 
     if (plant){

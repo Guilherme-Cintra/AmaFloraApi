@@ -77,7 +77,7 @@ export const createFav = async (req, res) => {
   };
   export const getWishList = async (req, res) => {
     try {
-      const uid = req.body.uid;
+      const uid = req.params.uid;
       const wishList = await WishList.findAll({
         where: {
           userId: uid,

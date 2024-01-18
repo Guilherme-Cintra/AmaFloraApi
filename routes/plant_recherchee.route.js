@@ -3,7 +3,7 @@ import { createRecherche, deleteAllFromUser, deleteRecherche, getAllRecherchesFr
 const rechercheRouter = Router()
 
 rechercheRouter.post('/create', createRecherche)
-rechercheRouter.get('/historique', getAllRecherchesFromUser)
+rechercheRouter.get('/historique/:uid', getAllRecherchesFromUser)
 rechercheRouter.delete('/delete/:id', deleteRecherche)
 rechercheRouter.delete('/deleteAll/', deleteAllFromUser)
 

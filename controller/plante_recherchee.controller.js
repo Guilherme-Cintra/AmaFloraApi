@@ -4,7 +4,7 @@ import User from "../models/user.model.js";
 
 export const getAllRecherchesFromUser = async (req, res) => {
   try {
-    const uid = req.body.uid;
+    const uid = req.params.uid;
     const recherches = await Plante_recherchee.findAll({
       where: {
         userId: uid,

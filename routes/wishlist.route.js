@@ -3,7 +3,7 @@ import { createFav, deleteFav, deleteWishList, getWishList } from "../controller
 
 const wishRouter = Router()
 
-wishRouter.get('/', getWishList)
+wishRouter.get('/:uid', getWishList)
 wishRouter.post('/', createFav)
 wishRouter.delete('/delete/:id',deleteFav)
 wishRouter.delete('/deleteAll/', deleteWishList)

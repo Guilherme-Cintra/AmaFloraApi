@@ -38,7 +38,7 @@ export const createIdentification = async (req, res) => {
 
 export const getAllIdentifications = async (req, res) => {
   try {
-    const userId = req.body.uid;
+    const userId = req.params.uid;
     const user = await User.findByPk(userId);
     if (user) {
       const identifications = await Identification.findAll({
