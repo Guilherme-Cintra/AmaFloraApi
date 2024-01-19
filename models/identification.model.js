@@ -11,14 +11,7 @@ Identification.init(
       primaryKey: true,
       allowNull: false,
     },
-    plantId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: "Plant",
-        key: "id",
-      },
-    },
+  
     userId: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -27,7 +20,6 @@ Identification.init(
         key: "uid",
       },
     },
-
     imageDidentification: {
         type: DataTypes.STRING,
         allowNull: true
