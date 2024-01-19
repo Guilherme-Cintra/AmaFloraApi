@@ -4,14 +4,14 @@ import User from "../models/user.model.js";
 
 export const createIdentification = async (req, res) => {
   try {
-    const { plantId, userId, imageDidentification, nomScientifique } = req.body;
-    const plant = await Plant.findByPk(plantId);
-    if (plant) {
+    const {  userId, imageDidentification, nomScientifique } = req.body;
+   
+
       const user = await User.findByPk(userId);
       const dateDidentification = new Date();
       if (user) {
         const identification = await Identification.create({
-          plantId,
+         
           userId,
           imageDidentification,
           nomScientifique,
@@ -25,9 +25,7 @@ export const createIdentification = async (req, res) => {
       } else {
         res.status(404).json({ message: "Utilisateur non trouvé" });
       }
-    } else {
-      res.status(404).json({ message: "Plante n'existe pas" });
-    }
+    
   } catch (error) {
     res.status(500).json({
       message: "Erreur lors de la sauvegarde de l'identification",
