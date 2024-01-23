@@ -4,7 +4,7 @@ import User from "../models/user.model.js";
 
 export const createIdentification = async (req, res) => {
   try {
-    const {  userId, imageDidentification, nomScientifique } = req.body;
+    const { userId, imageDidentification, nomScientifique } = req.body;
    
 
       const user = await User.findByPk(userId);
